@@ -1,3 +1,0 @@
-[server]
-sslCertFile = '/opt/airflow/Inteligencia_de_Dados/SolicitacaoGarantia/certificado/__riosulense_com_br.pem'
-sslKeyFile = '/opt/airflow/Inteligencia_de_Dados/SolicitacaoGarantia/certificado/privateKey.key'
