@@ -4,28 +4,28 @@ import streamlit as st
 
 st.title('Hello, streamlit')
 
-# def toggle_navbar(show: bool):
-    # if show:
-        # st.markdown("""
-        # <style>
-            # [data-testid="stSidebar"] { display: block !important; }
-            # [data-testid="stSidebarNav"] { display: block !important; }
-            # [data-testid="collapsedControl"] { display: block !important; }
-        # </style>
-        # """, unsafe_allow_html=True)
-    # else:
-        # st.markdown("""
-        # <style>
-            # [data-testid="stSidebar"] { display: none !important; }
-            # [data-testid="stSidebarNav"] { display: none !important; }
-            # [data-testid="collapsedControl"] { display: none !important; }
-        # </style>
-        # """, unsafe_allow_html=True)
+def toggle_navbar(show: bool):
+    if show:
+        st.markdown("""
+        <style>
+            [data-testid="stSidebar"] { display: block !important; }
+            [data-testid="stSidebarNav"] { display: block !important; }
+            [data-testid="collapsedControl"] { display: block !important; }
+        </style>
+        """, unsafe_allow_html=True)
+    else:
+        st.markdown("""
+        <style>
+            [data-testid="stSidebar"] { display: none !important; }
+            [data-testid="stSidebarNav"] { display: none !important; }
+            [data-testid="collapsedControl"] { display: none !important; }
+        </style>
+        """, unsafe_allow_html=True)
 
-# def main():
-    # st.session_state.setdefault("authenticated", False)
-    # st.session_state.setdefault("username", "")
-    # st.session_state.setdefault("group", "")
+def main():
+    st.session_state.setdefault("authenticated", False)
+    st.session_state.setdefault("username", "")
+    st.session_state.setdefault("group", "")
 
     # if st.session_state["authenticated"]:
         # grupos_usuario = set(st.session_state.get("group", []))
@@ -78,8 +78,5 @@ st.title('Hello, streamlit')
         # toggle_navbar(False)
         # login.show_page_login()
 
-    # if __name__ == "__main__":
-        # # query = st.query_params
-        # # token = query.get('token')
-        
-        # main()
+if __name__ == "__main__": 
+    main()
