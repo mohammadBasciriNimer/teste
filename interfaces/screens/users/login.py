@@ -1,12 +1,12 @@
-# from pathlib import Path
-# import streamlit as st
+from pathlib import Path
+import streamlit as st
 # from src.infra.auth.user import AuthUser
 # from src.settings.paths import SettingsPath
 
 
 
 # def show_page_login():
-    # st.set_page_config(page_title="House Rio",page_icon=SettingsPath.ASSETS_PATH /'rio_circulo.png',layout='centered')
+    # st.set_page_config(page_title="Rio de Dados",page_icon=SettingsPath.ASSETS_PATH /'rio_circulo.png',layout='centered')
     # page_col = st.columns([3,1])
 
     # st.image(image=SettingsPath.ASSETS_PATH /'image_login.png')

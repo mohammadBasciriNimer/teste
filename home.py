@@ -27,11 +27,11 @@ def main():
     st.session_state.setdefault("username", "")
     st.session_state.setdefault("group", "")
 
-    # if st.session_state["authenticated"]:
-        # grupos_usuario = set(st.session_state.get("group", []))
+    if st.session_state["authenticated"]:
+        grupos_usuario = set(st.session_state.get("group", []))
 
-        # toggle_navbar(True)
-        # pages = {}
+        toggle_navbar(True)
+        pages = {}
 
         # pages['🏠 Bem-Vindo'] = [
             # st.Page(
@@ -74,8 +74,8 @@ def main():
 
         # pg.run()
 
-    # else:
-        # toggle_navbar(False)
+    else:
+        toggle_navbar(False)
         # login.show_page_login()
 
 # if __name__ == "__main__": 
