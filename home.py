@@ -78,5 +78,5 @@ def main():
         # toggle_navbar(False)
         # login.show_page_login()
 
-if __name__ == "__main__": 
-    main()
+# if __name__ == "__main__": 
+main()
